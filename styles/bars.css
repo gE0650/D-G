@@ -1,0 +1,85 @@
+/*below is navbar part */
+.navbar {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  height: 80px;
+  display: flex;
+  z-index: 100;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 0px 40px;
+  text-decoration: none;
+  height: 100%;
+  font-size: 24px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 0px;
+}
+
+.navbar a:hover {
+  color: rgba(50, 150, 255, 1);
+}
+
+.navbar img {
+  height: 100%;
+  width: auto;
+}
+
+/* below is sidebar part */
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 60px;
+  right: 0;
+  width: 15%;
+  background-color: rgba(50, 150, 255, 0.5);
+  height: auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 8px 10px 8px;
+  gap: 10px;
+}
+
+.altbox {
+  width: 100%;
+  border-radius: 6px;
+  height: 80px;
+  box-sizing: border-box;
+  background-color: green;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.altbox:hover {
+  transform: scale(20);
+  background-color: limegreen;
+  cursor: pointer;
+}
+
+/* below is footer part */
+
+#footer {
+  background-color: rgba(0, 0, 0, 1);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
