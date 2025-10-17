@@ -1,0 +1,13 @@
+### 获取所有 Todos
+GET http://localhost:3000/todos
+
+### 添加一个 Todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "title": "测试任务"
+}
+
+### 删除一个 Todo（替换为你要删的 id）
+DELETE http://localhost:3000/todos/1697530020123
