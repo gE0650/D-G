@@ -19,9 +19,10 @@ exports.getTodos = (req, res) => {
 
 exports.addTodos = (req, res) => {
   const todos = readTodos();
+  console.log(req.body); //for debug
   const newtodo = {
     id: Date.now(),
-    title: req.body.title,
+    text: req.body.text,
     done: false,
   };
   todos.push(newtodo);
