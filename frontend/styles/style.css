@@ -43,9 +43,5 @@ button {
 }
 
 body {
-  background-image: url(../images/bg.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   padding-bottom: 50px;
 }

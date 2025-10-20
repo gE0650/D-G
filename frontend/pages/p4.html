@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Markdown 留言板</title>
+    <link rel="stylesheet" href="/styles/comments.css" />
+  </head>
+  <body>
+    <h2>评论区 Markdown 编辑器</h2>
+
+    <div class="comment-container">
+      <div id="allinput">
+        <textarea
+          id="markdown-input"
+          placeholder="输入你的 Markdown 评论..."
+        ></textarea>
+        <textarea id="name" placeholder="输入留言的落款"></textarea>
+        <div id="publish">publish</div>
+      </div>
+      <div id="markdown-preview"></div>
+    </div>
+    <div id="history"></div>
+
+    <!-- 引入库 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.5.0/dist/purify.min.js"></script>
+    <script src="/scripts/comments.js"></script>
+
+    <template id="commenttemp">
+      <div class="historycontainer">
+        <div class="comment"></div>
+        <span class="commentname"></span>
+      </div>
+    </template>
+  </body>
+</html>

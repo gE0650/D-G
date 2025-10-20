@@ -2,6 +2,8 @@ const template = document.getElementById("taskbartemplate");
 const Container = document.getElementById("tasksblock");
 const input = document.getElementById("input");
 const API_URL = "http://localhost:3000/todos";
+import { marked } from "marked";
+
 try {
   const res = await fetch(API_URL, { method: "GET" });
   const todos = await res.json();
